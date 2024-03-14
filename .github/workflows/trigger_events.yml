@@ -1,0 +1,14 @@
+name: trigger-events
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+jobs:
+  trigger-events:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Event triggered"
+      
+    
